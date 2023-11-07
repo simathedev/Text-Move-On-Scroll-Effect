@@ -56,8 +56,8 @@ export default function Home() {
      />
      <div className={styles.sliderContainer}>
      <div ref={slider} className={styles.slider}>
-      <p ref={firstText}> It's Artistry In Motion</p>
-      <p ref={secondText}>It's Artistry In Motion</p>
+      <p ref={firstText}>Artistry In Motion</p>
+      <p ref={secondText}>Artistry In Motion</p>
      </div>
      </div>
      <div>
