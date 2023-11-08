@@ -3,6 +3,7 @@
   display: flex;
   height: 100vh;
   overflow: hidden;
+  z-index:1;
 }
 /*navbar*/
 .navbar {
@@ -16,7 +17,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   top:0;
   transition: color 0.3s, font-size 0.3s;
@@ -26,26 +27,27 @@
   font-size:6rem;
 }
 .credits {
-  z-index:1;
-  height: 100vh;
+  height:100vh;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  padding: 10rem;
+  /*overflow:hidden;*/
 }
 
 .credits h1 {
-  font-size: 4rem;
-  margin: 1rem;
+   /* font-size: 4rem;
+     margin: 1rem;
+   */
   transition: color 0.3s;
-  height: 5rem; /* Fixed height to prevent layout shifts */
+  height: 5rem;
+
 }
 
 .credits h1:hover {
-  font-size: 5rem;
+  /*font-size: 5rem;*/
   color: yellow;
 }
 
@@ -56,10 +58,9 @@ font-weight: 500;
 color:yellow;
 }
 
-.credits p {
-  font-size: 24px;
+/*.credits p {
   padding: 4rem;
-}
+}*/
 
 .links {
   display: flex;

@@ -44,12 +44,15 @@ const Credits = () => {
       ref={creditsRef}
       initial={{ opacity: 0, y: 100 }}
       animate={controls}
-      className={styles.credits}
+      className={`${styles.credits} px-[10px]`}
     >
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
+        className='xs:text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem]
+        md:m-[1rem] lg:m-[1rem] xl:m-[1rem]
+         hover:xs:text-[3rem] hover:sm:text-[3rem] hover:md:text-[4rem] hover:lg:text-[5rem] hover:xl:text-[5rem] '
       >
         -About-
       </motion.h1>
@@ -57,6 +60,7 @@ const Credits = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
+        className='xs:text-[10px] sm:text-[16px] md:text-[22px] lg:[24px] xl:[24px] w-[70%] m-4'
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente commodi enim
         consectetur numquam saepe eaque repudiandae quos fuga corrupti perferendis sint ullam alias
@@ -69,6 +73,7 @@ const Credits = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
+        className='xs:text-[16px] sm:text-[16px] md:text-[22px] lg:[24px] xl:[24px] w-[70%] m-4'
       >
         Created by Simanye M
       </motion.h2>
